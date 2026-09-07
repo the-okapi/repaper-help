@@ -22,12 +22,12 @@
 	}
 </script>
 
-<div class="fixed top-0 flex h-20 w-screen border-b border-(--o) bg-(--bg) p-5">
-	<div class="flex w-full items-center">
+<div class="fixed top-0 flex h-20 w-screen border-b border-(--o) bg-(--bg) px-7 py-5">
+	<div class="flex w-full items-center gap-4">
 		{@render children()}
 	</div>
 	<h1 class="flex items-center px-5 text-4xl font-bold whitespace-nowrap">{page.data.title}</h1>
-	<div class="flex w-full items-center justify-end gap-5">
+	<div class="flex w-full items-center justify-end gap-4">
 		<p class="flex text-lg">
 			{#if mode.current === 'dark'}
 				<button class="under cursor-pointer" onclick={setLight}>{light}</button>
